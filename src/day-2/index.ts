@@ -1,8 +1,8 @@
 import { runSolver } from '../util';
 
-runSolver(__dirname, solve);
-
 // -------------------------
+
+const regex = /(\d+)-(\d+) ([a-z]): (.*)/;
 
 function solvePartOne(input: string) {
   const regex = /(\d+)-(\d+) ([a-z]): (.*)/;
@@ -28,7 +28,6 @@ function solvePartOne(input: string) {
 // solution: 519
 
 function solve(input: string) {
-  const regex = /(\d+)-(\d+) ([a-z]): (.*)/;
   const lines = input.split('\n');
 
   let valid = 0;
@@ -51,3 +50,7 @@ function solve(input: string) {
 
 // invalid solution: 423 (not 0-indexed, duh!)
 // solution: 708
+
+// -------------------------
+
+runSolver(__dirname, solve);

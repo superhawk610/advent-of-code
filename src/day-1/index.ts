@@ -1,7 +1,5 @@
 import { runSolver } from '../util';
 
-runSolver(__dirname, solve);
-
 // -------------------------
 
 function solvePartOne(input: string) {
@@ -46,3 +44,7 @@ function solve(input: string) {
 }
 
 // solution: 293450526
+
+// -------------------------
+
+runSolver(__dirname, solve);
